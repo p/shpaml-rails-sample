@@ -1,0 +1,17 @@
+p
+  Hi
+
+  % render :partial => 'content_partial'
+
+  % if request.env
+    p
+      We have an environment in request
+  % else
+    p | We do not have an environment in request
+
+% for key in request.env.keys
+  p
+    strong
+      = key
+    ->
+    = request.env[key]

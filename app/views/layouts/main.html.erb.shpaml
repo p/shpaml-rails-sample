@@ -1,0 +1,18 @@
+html
+  head
+    script type=text/javascript
+      // inline js needs no special formatting if it has
+      // constant indentation
+
+      var foo = 1;
+      var bar = foo;
+      foo + bar;
+      window.title = 'js title test';
+
+    title
+      Page title - no js
+
+  body
+    .wrap
+      .content
+        % render :partial => 'layout_partial'
